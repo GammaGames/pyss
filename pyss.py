@@ -2,7 +2,7 @@
 
 import sass, sys, os
 
-if len(sys.argv) < 2:
+if len(sys.argv) < 2 or sys.argv[1] == "-h":
     print("Usage: pyss <source file/folder> [target file/folder] [output_style]")
     quit()
 
@@ -30,6 +30,8 @@ if os.path.isfile(source):
         f.write(css)
 
 elif os.path.isdir(source):
+    if not target:
+        target = "css"
     sass.compile(dirname=(source, target), output_style=style)
 
 quit()
