@@ -13,11 +13,11 @@ alias pyss='python3 /home/jlieberg/Documents/pyss/pyss.py'
 pip3 install libsass
 ```
 
-Commands:
+### Commands
 * `pyss <source file> [target file] [output style]` - compile scss file into css
 * `pyss <source folder> [target folder] [output style]` - compile scss file into css
 
-Examples:
+### Examples
 
 I included a few example scss files to test the script on. You can run them with the following:
 
